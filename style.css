@@ -1,0 +1,149 @@
+body {
+  background-image: url(images/bg-desktop.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(257, 40%, 49%);
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  margin: 2.5%;
+}
+.header {
+  padding-left: 3%;
+  padding-top: 20px;
+}
+.header, .content {
+  display: flex;
+}
+.content {
+  padding-top: 5.3rem;
+  padding-bottom: .6rem;
+  padding-left: 2.2rem;
+  justify-content: center;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  margin: 1rem 0
+}
+
+.content img {
+  width: 55%;
+}
+.description {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
+  width: 42%;
+}
+.description p {
+  font-size: 1.1em;
+}
+.button {
+  padding: .5rem 0;
+}
+.button-submit {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: rgb(126, 74, 175);
+  padding: .5rem;
+  width: 12.5rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.295);
+}
+.icons {
+  display: flex;
+  align-items: center;
+  padding: .7rem;
+}
+.icons:visited{
+  color: #fff;
+}
+.footer .icons {
+  margin: .5rem;
+  border: solid 1.5px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 720px){
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .content img {
+    width: 90%;
+    align-content: center;
+  }
+  .description {
+    width: 90%;
+    padding: 0;
+  }
+  .description h2 {
+    font-size: 1.8em;
+    font-weight: 400;
+  }
+  .footer {
+    justify-content: center;
+    padding: 50px 0 0 0;
+    }
+}
+@media screen and (max-width: 375px) {
+  body {
+  background-image: url(images/bg-mobile.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: hsl(257, 40%, 49%);
+  }
+  .header img{
+    padding: 10px 10px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+  }
+  .content img {
+    width: 90%;
+    padding-bottom: 3.5rem;
+  }
+  .description {
+    width: 90%;
+    text-align: center;
+    padding: 0;
+  }
+  .description h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .button-submit {
+    width: 16rem;
+    height: 3.3rem;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.295);
+  }
+  .footer {
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  }
+  .icons {
+    padding: 9px;
+  }
+}
